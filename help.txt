@@ -1,0 +1,583 @@
+1번
+#include <iostream>
+
+using namespace std;
+int main() {
+    cout << "hello";
+}
+
+2번
+#include <iostream>
+
+using namespace std;
+int main() {
+    cout << "hello World";
+}
+
+3번
+#include <iostream>
+
+using namespace std;
+int main() {
+    cout << "Hello" << endl;
+    cout << "World";
+}
+4번
+#include <iostream>
+
+using namespace std;
+int main() {
+    cout << "\'Hello\'";
+}
+5번
+#include <iostream>
+
+using namespace std;
+int main() {
+    cout << "\"Hello World\"";
+}
+6번
+#include <iostream>
+
+using namespace std;
+int main() {
+    cout << "\""!@#$%^&*()\"";
+}
+7번
+#include <iostream>
+using namespace std;
+int main(){
+cout << "\"C:\\Download\\hello.cpp\"";
+}
+8번
+#include <iostream>
+using namespace std;
+int main(){
+cout << "\u250C\u252C\u2510" << endl;
+cout << "\u251C\u253C\u2524" << endl;
+cout << "\u2514\u2534\u2518" << endl;
+}
+10번
+#include <iostream>
+using namespace std;
+int main(){
+int x;
+cin >> x;
+cout << x;
+}
+11번
+#include <iostream>
+using namespace std;
+int main(){
+char x;
+cin >> x;
+cout << x;
+}
+12번
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main(){
+float a;
+cin >> a;
+cout << fixed <<setprecision(6) <<a;
+}
+
+13번
+#include <iostream>
+
+using namespace std;
+int main(){
+int a,b;
+cin >>a>>b;
+cout << a << " " << b;
+}
+
+14번
+#include <iostream>
+
+using namespace std;
+int main(){
+char a,b;
+cin >>a>>b;
+cout << b << " " << a;
+}
+
+15번
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+int main(){
+float a;
+cin >> a;
+cout << fixed << setprecision(2) << a;
+}
+
+17번
+#include <iostream>
+
+using namespace std;
+int main(){
+int a;
+cin >> a;
+cout <<a<<" "<<a<<" "<<a;
+}
+
+18번
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() {
+    string hour, min;
+    getline(cin, hour, ':');
+    getline(cin, min, '\n');
+    cout << hour << ":" << min;
+}
+
+19번
+
+20번
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+string first,second;
+getline(cin, first, '-');
+getline(cin, second, '\n');
+cout << first << second;
+}
+
+21번
+#include <iostream>
+
+using namespace std;
+int main() {
+    char a[51] ;
+    cin >> a;
+    cout << a;
+}
+
+22번
+#include <iostream>
+
+using namespace std;
+int main() {
+    char a[2001] ;
+    cin.getline(a,2001);
+    cout << a;
+}
+
+
+23번
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() {
+    string a,b;
+    getline(cin, a, '.');
+    getline(cin, b, '\n');
+    cout << a <<endl;
+    cout << b;
+}
+
+
+24번
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main() {
+	char str[21];
+	cin.getline(str, 21, '\n');
+	for (int i = 0; i < 21; i++) {
+		if (str[i] == NULL) {
+			break;
+		}
+		cout << "\'"<<str[i]<<"\'" << endl;
+	}
+}
+
+25번
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() {
+    char a[5];
+    for (int i = 0; i<5; i++) {
+        cin >> a[i];
+    }
+    cout << '[' << (a[0] - '0') * 10000 << ']' << endl;
+	cout << '[' <<  (a[1] - '0') * 1000 << ']' << endl;
+	cout << '[' << (a[2] - '0') * 100 << ']' <<endl;
+	cout << '[' << (a[3] - '0') * 10 << ']' << endl;
+	cout << '[' << (a[4] - '0') * 1 << ']' << endl;
+}
+
+
+26번 !질문
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int hour, minute, second;
+	cin >> hour;
+	cin.ignore(256, ':'); 
+	cin >> minute;
+	cin.ignore(256, ':');
+	cin >> second;
+	cin.ignore(256, '\n');
+
+	cout << minute << endl;
+}
+
+27번
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	string year, month, day;
+	getline(cin, year, '.');
+	getline(cin, month, '.');
+	getline(cin, day, '\n');
+
+	cout << day << "-" << month << "-" << year; 
+}
+
+28번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	unsigned int a;
+	cin >> a;
+	cout << a;
+}
+
+29번
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	double a;
+	cin >> a;
+	cout << fixed << setprecision(11) << a;
+}
+
+30번
+#include <iostream>
+using namespace std;
+
+int main() {
+	long long int a;
+	cin >> a;
+	cout << a;
+}
+
+31번
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int x;
+	cin >> dec >> x;
+	cout << oct << x << endl;
+}
+
+32번
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int x;
+	cin >> dec >> x;
+	cout << hex << x << endl;
+}
+
+33번
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int x;
+	cin >> dec >> x;
+	cout << hex << uppercase << x << endl;
+}
+
+34번
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int x;
+	cin >> oct >> x;
+	cout << dec << x << endl;
+}
+
+35번
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int x;
+	cin >> hex >> x;
+	cout << oct << x << endl;
+}
+
+36번
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	char x;
+	cin >> x;
+	cout << dec << (int)x << endl;
+}
+
+37번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int x;
+	cin >> x;
+	cout << (char)x << endl;
+}
+
+38번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	long int x,y;
+	cin >> x >> y;
+	cout << x + y << endl;
+}
+
+39번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	long long int x,y;
+	cin >> x >> y;
+	cout << x + y << endl;
+}
+
+40번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int x;
+	cin >> x;
+	cout << (-1)*x << endl;
+}
+
+
+41번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	char x;
+	cin >> x;
+	cout << char(1+x) << endl;
+}
+
+
+42번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int x,y;
+	cin >> x >> y;
+	cout << x/y << endl;
+}
+
+
+
+43번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int x,y;
+	cin >> x >> y;
+	cout << x%y << endl;
+}
+
+44번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	long int x;
+	cin >> x;
+	cout << x+1 << endl;
+}
+
+
+
+45번
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	int op1, op2;
+	cin >> op1 >> op2;
+	cout << op1 + op2 << endl;
+	cout << op1 - op2 << endl;
+	cout << op1 * op2 << endl;
+	cout << op1 / op2 << endl;
+	cout << op1 % op2 << endl;
+
+	float result = (float)op1 / (float)op2;
+	cout << fixed<< setprecision(2) << result;
+}
+
+46번 질문
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	int op1, op2, op3
+	cin >> op1 >> op2 >> op3;
+	cout << op1 + op2 + op3 << endl;
+	float ave = (op1+op2+op3) / 3.0;
+	cout << setprecision(2) << result;
+}
+
+47번 
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int x;
+	cin >> x;
+	cout << x * 2 << endl;
+}
+
+48번 
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+	int x,y;
+	cin >> x >> y;
+	cout << x * pow(2, y) << endl;
+}
+
+49번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	if (a > b) { 
+	    cout << 1 << endl; }
+	else {
+	    cout << 0 << endl; }
+}
+
+50번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	if (a == b) { 
+	    cout << 1 << endl; }
+	else {
+	    cout << 0 << endl; }
+}
+
+51번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	if (a <= b) { 
+	    cout << 1 << endl; }
+	else {
+	    cout << 0 << endl; }
+}
+52번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int a, b;
+	cin >> a >> b;
+	if (a != b) { 
+	    cout << 1 << endl; }
+	else {
+	    cout << 0 << endl; }
+}
+
+53번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	bool x;
+	cin >> x;
+	if (x==1) { 
+	    cout << 0 << endl; }
+	else {
+	    cout << 1 << endl; }
+}
+
+54번
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	bool x, y;
+	cin >> x >> y;
+	if (x==1 && y==1) { 
+	    cout << 1 << endl; }
+	else {
+	    cout << 0 << endl; }
+}
+
+
+
